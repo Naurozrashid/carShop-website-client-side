@@ -1,0 +1,51 @@
+/* Banner Style Sheet */
+.caption h3 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+}
+.caption h4 {
+  font-weight: 700;
+  color: white;
+}
+
+.banner1 {
+  background: url(../../../images/banner/55040_2020_Toyota_Innova_Crysta.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+}
+.banner2 {
+  background: url(../../../images/banner/2019_Honda_Civic_Blue_small.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+}
+.banner3 {
+  background: url(../../../images/banner/Marcedes_Benz.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+}
+.text-size {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.icon {
+  font-size: 3rem;
+}
+
+.card-background {
+  width: 100%;
+  color: white;
+  border-radius: 20px;
+  background: #262339;
+  box-shadow: 0px 0px 10px #ff8989;
+  padding: 5px 5px;
+}
+
+.text-style {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+}
