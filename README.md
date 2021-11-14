@@ -1,6 +1,6 @@
 # Garirbazar
 
-This project link is in there [click here]('https://cranky-raman-6b2e4e.netlify.app/home').
+This project link is in there [click here](https://cranky-raman-6b2e4e.netlify.app/).
 
 ## Importent Notes
 
