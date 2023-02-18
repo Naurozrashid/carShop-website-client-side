@@ -14,7 +14,7 @@ const AddProduct = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("https://obscure-coast-47054.herokuapp.com/products", data).then((response) => {
+    axios.post("https://carshop-website-server-side.onrender.com/products", data).then((response) => {
       console.log(response);
       if (response.data.insertedId) {
         Swal.fire(

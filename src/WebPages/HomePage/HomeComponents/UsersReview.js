@@ -4,7 +4,7 @@ import defaultImage from "../../../images/defaultUser.png";
 const UsersReview = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("https://obscure-coast-47054.herokuapp.com/reviews")
+    fetch("https://carshop-website-server-side.onrender.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

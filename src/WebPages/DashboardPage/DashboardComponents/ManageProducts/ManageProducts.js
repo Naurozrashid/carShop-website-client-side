@@ -5,7 +5,7 @@ import Rating from "react-rating";
 const ManageProducts = () => {
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch("https://obscure-coast-47054.herokuapp.com/products")
+    fetch("https://carshop-website-server-side.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setAllProducts(data));
   });
@@ -15,7 +15,7 @@ const ManageProducts = () => {
       "Are you sure, you want to delete this product?"
     );
     if (proceed) {
-      const productsUrl = `https://obscure-coast-47054.herokuapp.com/products/${id}`;
+      const productsUrl = `https://carshop-website-server-side.onrender.com/products/${id}`;
       fetch(productsUrl, {
         method: "DELETE",
       })

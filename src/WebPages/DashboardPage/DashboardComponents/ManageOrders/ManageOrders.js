@@ -7,7 +7,7 @@ const ManageOrders = () => {
   const [isUpdated, setIsUpdated] = useState(null);
 
   useEffect(() => {
-    fetch("https://obscure-coast-47054.herokuapp.com/orders")
+    fetch("https://carshop-website-server-side.onrender.com/orders")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -16,7 +16,7 @@ const ManageOrders = () => {
   }, [isUpdated]);
 
   const handleUpdateOrder = (id) => {
-    const url = `https://obscure-coast-47054.herokuapp.com/orders/${id}`;
+    const url = `https://carshop-website-server-side.onrender.com/orders/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -43,7 +43,7 @@ const ManageOrders = () => {
     console.log(proceed);
 
     if (proceed) {
-      const url = `https://obscure-coast-47054.herokuapp.com/orders/${id}`;
+      const url = `https://carshop-website-server-side.onrender.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

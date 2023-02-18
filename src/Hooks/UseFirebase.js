@@ -29,7 +29,7 @@ const UseFirebase = () => {
   //check admin from database
   const [admin, setAdmin] = useState(false);
   useEffect(() => {
-    fetch(`https://obscure-coast-47054.herokuapp.com/users/${user.email}`)
+    fetch(`https://carshop-website-server-side.onrender.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
@@ -120,7 +120,7 @@ const UseFirebase = () => {
   };
 
   const setUserNameToFirebase = () => {
-    updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+    updateProfile(auth.currentUser, { displayName: name }).then((result) => { });
   };
 
   const verifyEmail = () => {
@@ -131,7 +131,7 @@ const UseFirebase = () => {
   //save user in the database
   const saveUserToDatabase = (email, displayName, METHOD) => {
     const user = { email, displayName };
-    fetch("https://obscure-coast-47054.herokuapp.com/users", {
+    fetch("https://carshop-website-server-side.onrender.com/users", {
       method: METHOD,
       headers: {
         "content-type": "application/json",

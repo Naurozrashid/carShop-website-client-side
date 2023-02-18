@@ -25,7 +25,7 @@ const Review = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("https://obscure-coast-47054.herokuapp.com/reviews", data).then((res) => {
+    axios.post("https://carshop-website-server-side.onrender.com/reviews", data).then((res) => {
       console.log(res);
       if (res.data.insertedId) {
         Swal.fire("Thanks", "Your review has been Completed!", "success");

@@ -12,7 +12,7 @@ const MakeAdmin = () => {
   } = useForm();
 
   const handleMakeAdmin = (data) => {
-    axios.put("https://obscure-coast-47054.herokuapp.com/users/admin", data).then((response) => {
+    axios.put("https://carshop-website-server-side.onrender.com/users/admin", data).then((response) => {
       console.log(response);
       if (response.data.modifiedCount) {
         Swal.fire(

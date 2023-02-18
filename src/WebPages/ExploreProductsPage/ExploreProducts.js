@@ -5,7 +5,7 @@ import NavigationBar from "../../SharedComponents/NavigationBar/NavigationBar";
 const ExploreProducts = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://obscure-coast-47054.herokuapp.com/products")
+    fetch("https://carshop-website-server-side.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setProducts(data));
   });

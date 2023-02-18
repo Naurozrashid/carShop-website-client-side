@@ -10,7 +10,7 @@ const PurchaseCar = () => {
   const [products, setProducts] = useState([]);
   const [singleCar, setSingleCar] = useState({});
   useEffect(() => {
-    fetch("https://obscure-coast-47054.herokuapp.com/products")
+    fetch("https://carshop-website-server-side.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

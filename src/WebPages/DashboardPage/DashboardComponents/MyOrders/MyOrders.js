@@ -7,7 +7,7 @@ const MyOrders = () => {
   const [userOrders, setUserOders] = useState([]);
 
   useEffect(() => {
-    fetch(`https://obscure-coast-47054.herokuapp.com/orders`)
+    fetch(`https://carshop-website-server-side.onrender.com/orders`)
       .then((res) => res.json())
       .then((data) => setUserOders(data));
   }, []);
@@ -15,7 +15,7 @@ const MyOrders = () => {
   const handleDeleteOrder = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete");
     if (proceed) {
-      const url = `https://obscure-coast-47054.herokuapp.com/orders/${id}`;
+      const url = `https://carshop-website-server-side.onrender.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
